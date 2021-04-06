@@ -22,7 +22,7 @@
             $this->routes = [];
             $this->routes[HttpMethod::$get] = [];
             $this->routes[HttpMethod::$post] = [];
-            $this->routes[HttpMethod::$update] = [];
+            $this->routes[HttpMethod::$put] = [];
             $this->routes[HttpMethod::$delete] = [];
 
             $this->pipeline = new Pipeline();
@@ -31,6 +31,46 @@
                 "request" => new RequestHandler()
             ];
             $this->postprocessing = [];
+        }
+
+        private function getFunction(mixed $function) : Array
+        {
+            $class = "";
+
+            if (is_array($function) && count($function) >= 2)
+            {
+                $class = $function[0];
+                $function = $function[1];
+            }
+
+            return [
+                'class' => $class,
+                'function' => $function
+            ];
+        }
+
+        public function get(String $path, mixed $function)
+        {
+            $action = $this->getFunction($function);
+            $this->addGetRoute($path, $action['class'], $action["function"]);
+        }
+
+        public function post(String $path, mixed $function)
+        {
+            $action = $this->getFunction($function);
+            $this->addPostRoute($path, $action['class'], $action["function"]);
+        }
+
+        public function put(String $path, mixed $function)
+        {
+            $action = $this->getFunction($function);
+            $this->addPutRoute($path, $action['class'], $action["function"]);
+        }
+
+        public function delete(String $path, mixed $function)
+        {
+            $action = $this->getFunction($function);
+            $this->addDeleteRoute($path, $action['class'], $action["function"]);
         }
 
         public function addGetRoute(String $path, String $class, $function)
@@ -43,9 +83,9 @@
             $this->addRoute(HttpMethod::$post, $path, $class, $function);
         }
 
-        public function addUpdateRoute(String $path, String $class, $function)
+        public function addPutRoute(String $path, String $class, $function)
         {
-            $this->addRoute(HttpMethod::$update, $path, $class, $function);
+            $this->addRoute(HttpMethod::$put, $path, $class, $function);
         }
 
         public function addDeleteRoute(String $path, String $class, $function)
