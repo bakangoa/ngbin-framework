@@ -6,7 +6,7 @@
     {
         public static $get = "GET";
         public static $post = "POST";
-        public static $update = "UPDATE";
+        public static $put = "PUT";
         public static $delete = "DELETE";
     }
 
