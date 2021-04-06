@@ -37,6 +37,12 @@
         {
             $params = [];
 
+            $get_params_position = strpos($uri, "?");
+            if ($get_params_position != false)
+            {
+                $uri = substr($uri, 0, $get_params_position);
+            }
+
             $path = trim($path, "/");
             $uri = trim($uri, "/");
 
@@ -55,7 +61,7 @@
 
             foreach ($path as $key => $value) {
                 $param_position = strpos($value, ":");
-                if ($param_position != 0 && $value != $uri)
+                if ((is_bool($param_position) || $param_position != 0) && $value != $uri[$key])
                 {
                     return null;
                 }
