@@ -37,6 +37,12 @@
         {
             $params = [];
 
+            $get_params_position = strpos($uri, "?");
+            if ($get_params_position != false)
+            {
+                $uri = substr($uri, 0, $get_params_position);
+            }
+
             $path = trim($path, "/");
             $uri = trim($uri, "/");
 
