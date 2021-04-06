@@ -33,7 +33,7 @@
             $this->postprocessing = [];
         }
 
-        private function getFunction(mixed $function) : Array
+        private function getFunction($function) : Array
         {
             $class = "";
 
@@ -49,25 +49,25 @@
             ];
         }
 
-        public function get(String $path, mixed $function)
+        public function get(String $path, $function)
         {
             $action = $this->getFunction($function);
             $this->addGetRoute($path, $action['class'], $action["function"]);
         }
 
-        public function post(String $path, mixed $function)
+        public function post(String $path, $function)
         {
             $action = $this->getFunction($function);
             $this->addPostRoute($path, $action['class'], $action["function"]);
         }
 
-        public function put(String $path, mixed $function)
+        public function put(String $path, $function)
         {
             $action = $this->getFunction($function);
             $this->addPutRoute($path, $action['class'], $action["function"]);
         }
 
-        public function delete(String $path, mixed $function)
+        public function delete(String $path, $function)
         {
             $action = $this->getFunction($function);
             $this->addDeleteRoute($path, $action['class'], $action["function"]);
