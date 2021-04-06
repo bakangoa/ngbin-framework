@@ -54,12 +54,13 @@
             }
 
             foreach ($path as $key => $value) {
-                if ($value[0] != ':' && $value != $uri)
+                $param_position = strpos($value, ":");
+                if ($param_position != 0 && $value != $uri)
                 {
                     return null;
                 }
 
-                if ($value[0] == ':')
+                if (is_int($param_position) && $param_position == 0)
                 {
                     $params[substr($value, 1)] = $uri[$key];
                 }
