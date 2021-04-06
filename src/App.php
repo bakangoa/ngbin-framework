@@ -8,7 +8,7 @@
     use Ngbin\Framework\Worker\Launcher;
     use Ngbin\Framework\Worker\RequestHandler;
     use Ngbin\Framework\Worker\Response;
-    use Ngbin\Framework\Workers\Router;
+    use Ngbin\Framework\Worker\Router;
 
     class App {
 

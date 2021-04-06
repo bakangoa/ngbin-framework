@@ -7,7 +7,7 @@
 
         private $next;
 
-        public function getNext() : mixed
+        public function getNext()
         {
             return $this->next;
         }
@@ -19,7 +19,7 @@
 
         protected abstract function processing(Entity $entity) : Entity;
 
-        public function run(mixed $data, bool $rewrite_data = false) : mixed
+        public function run($data, bool $rewrite_data = false)
         {
             $result = $this->processing($data);
 

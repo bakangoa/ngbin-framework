@@ -1,9 +1,9 @@
 <?php
 
-    namespace Ngbin\Framework\Workers;
+    namespace Ngbin\Framework\Worker;
 
-use Ngbin\Framework\Core\Entity;
-use Ngbin\Framework\Entity\RequestEntity;
+    use Ngbin\Framework\Core\Entity;
+    use Ngbin\Framework\Entity\RequestEntity;
     use Ngbin\Framework\Entity\RouteEntity;
 
     class Router extends \Ngbin\Framework\Core\Worker

@@ -27,7 +27,7 @@
             $temp->setNext($worker);
         }
 
-        public function start(mixed $data, bool $rewrite_data = false)
+        public function start($data, bool $rewrite_data = false)
         {
             return $this->head_worker->run($data, $rewrite_data);
         }   
