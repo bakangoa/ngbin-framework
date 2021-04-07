@@ -1,5 +1,5 @@
 # ngbin-framework
-Ngbin framework is a PHP micro framework developed by our engineers to introduce a new way to handle and process http request
+Ngbin framework is a PHP micro framework developed to introduce a new way to handle and process http request
 
 # How to install ?
 
