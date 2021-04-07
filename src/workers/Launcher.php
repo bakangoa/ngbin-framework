@@ -5,6 +5,9 @@
     use Ngbin\Framework\Core\Entity;
     use Ngbin\Framework\Entity\ContentEntity;
 
+    /**
+     * A worker which execute a function
+     */
     class Launcher extends \Ngbin\Framework\Core\Worker
     {
         protected function processing(Entity $data) : ContentEntity
