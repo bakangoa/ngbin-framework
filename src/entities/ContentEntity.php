@@ -9,13 +9,13 @@
         private $data;
         private $code;
 
-        public function __construct(mixed $content, int $code = -1)
+        public function __construct( $content, int $code = -1)
         {
             $this->data = $content;
             $this->code = $code;
         }
 
-        public function getData() : mixed
+        public function getData()
         {
             return $this->data;
         }

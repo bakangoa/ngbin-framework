@@ -4,7 +4,7 @@
 
     interface Formatter
     {
-        public function format(mixed $data) : mixed;
+        public function format($data);
     }
 
 ?>
