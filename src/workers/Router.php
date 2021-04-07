@@ -14,7 +14,7 @@
             $this->routes = $routes;
         }
 
-        private function chooseRoute(RequestEntity $request) : mixed
+        private function chooseRoute(RequestEntity $request)
         {
             $routes = $this->routes[$request->method];
             foreach ($routes as $path => $route) {
@@ -33,7 +33,7 @@
             return new RouteEntity("", "", $request);
         }
 
-        private function getRouteParams(String $path, String $uri) : mixed
+        private function getRouteParams(String $path, String $uri)
         {
             $params = [];
 
