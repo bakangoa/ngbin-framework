@@ -6,14 +6,30 @@
     use Ngbin\Framework\Entity\RequestEntity;
     use Ngbin\Framework\Entity\RouteEntity;
 
+    /**
+     * A worker to choose which function to run depending to request
+     */
     class Router extends \Ngbin\Framework\Core\Worker
     {
+        /**
+         * Array which contains a list of routes for routing
+         * @var Array
+         */
         private $routes;
 
+        /**
+         * @param Array $routes
+         */
         public function __construct(Array $routes) {
             $this->routes = $routes;
         }
 
+        /**
+         * Choose a route
+         * @param RequestEntity $request
+         * 
+         * @return RouteEntity
+         */
         private function chooseRoute(RequestEntity $request)
         {
             $routes = $this->routes[$request->method];
@@ -33,6 +49,13 @@
             return new RouteEntity("", "", $request);
         }
 
+        /**
+         * Compare a path and an uri
+         * @param String $path
+         * @param String $uri
+         * 
+         * @return null|Array Array which contains eventual parameters when the path and the uri are same. null else
+         */
         private function getRouteParams(String $path, String $uri)
         {
             $params = [];
