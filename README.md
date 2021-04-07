@@ -9,3 +9,5 @@ Just run the command "composer require bakangoa/ngbin-framework".
 
 Create in your code an instance of "Ngbin\Framework\App". 
 Add to this instance some worker, routes and call method run to start your app.
+
+Official documentation at https://bakangoa.github.io/ngbin-framework/
