@@ -7,7 +7,7 @@
     /**
      * An entity which represents the HTTP response
      */
-    class ResponseEntity extends Entity
+    class Response extends Entity
     {
         /**
          * Contains the response data

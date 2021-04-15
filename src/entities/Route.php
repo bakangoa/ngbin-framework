@@ -7,7 +7,7 @@
     /**
      * An entity which represent a function route
      */
-    class RouteEntity extends Entity
+    class Route extends Entity
     {
         /**
          * The class of the function
@@ -21,16 +21,16 @@
         public $method;
         /**
          * The request to transmit as function argument
-         * @var RequestEntity
+         * @var Request
          */
         public $request;
 
         /**
          * @param String $class
          * @param mixed $method
-         * @param RequestEntity $request
+         * @param Request $request
          */
-        public function __construct(String $class, $method, RequestEntity $request)
+        public function __construct(String $class, $method, Request $request)
         {
             $this->class = $class;
             $this->method = $method;

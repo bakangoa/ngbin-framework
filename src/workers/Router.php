@@ -3,8 +3,8 @@
     namespace Ngbin\Framework\Worker;
 
     use Ngbin\Framework\Core\Entity;
-    use Ngbin\Framework\Entity\RequestEntity;
-    use Ngbin\Framework\Entity\RouteEntity;
+    use Ngbin\Framework\Entity\Request;
+    use Ngbin\Framework\Entity\Route;
 
     /**
      * A worker to choose which function to run depending to request
@@ -26,11 +26,11 @@
 
         /**
          * Choose a route
-         * @param RequestEntity $request
+         * @param Request $request
          * 
-         * @return RouteEntity
+         * @return Route
          */
-        private function chooseRoute(RequestEntity $request)
+        private function chooseRoute(Request $request)
         {
             $routes = $this->routes[$request->method];
             foreach ($routes as $path => $route) {
@@ -42,11 +42,11 @@
                         $request->params = array_merge($request->params, $params);
                     }
 
-                    return new RouteEntity($route['class'], $route['function'], $request);
+                    return new Route($route['class'], $route['function'], $request);
                 }
             }
 
-            return new RouteEntity("", "", $request);
+            return new Route("", "", $request);
         }
 
         /**
@@ -98,7 +98,7 @@
             return $params;
         }
 
-        protected function processing(Entity $data) : RouteEntity
+        protected function process(Entity $data) : Route
         {
             return $this->chooseRoute($data);
         }

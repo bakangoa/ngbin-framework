@@ -10,7 +10,7 @@
      */
     class Launcher extends \Ngbin\Framework\Core\Worker
     {
-        protected function processing(Entity $data) : ContentEntity
+        protected function process(Entity $data) : ContentEntity
         {
             if (!empty($data->class))
             {

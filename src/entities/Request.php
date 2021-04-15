@@ -7,7 +7,7 @@
     /**
      * An entity which represents the request handled
      */
-    class RequestEntity extends Entity
+    class Request extends Entity
     {
 
         /**

@@ -7,7 +7,7 @@
     use Ngbin\Framework\Core\Worker;
     use Ngbin\Framework\Worker\Launcher;
     use Ngbin\Framework\Worker\RequestHandler;
-    use Ngbin\Framework\Worker\Response;
+    use Ngbin\Framework\Worker\ResponseSender;
     use Ngbin\Framework\Worker\Router;
 
     /**
@@ -259,7 +259,7 @@
                 $this->pipeline->add($value);
             }
 
-            $this->pipeline->add(new Response());
+            $this->pipeline->add(new ResponseSender());
 
             try {
                 $response = $this->pipeline->start(Entity::empty(), true);
