@@ -2,12 +2,10 @@
 
     namespace Ngbin\Framework\Entity;
 
-    use Ngbin\Framework\Core\Entity;
-
     /**
      * An entity which represents the request handled
      */
-    class RequestEntity extends Entity
+    class Request extends HttpEntity
     {
 
         /**
@@ -45,11 +43,17 @@
          */
         public function __construct(String $uri, String $method, Array $params = [], Array $body = [], Array $query = [])
         {
+            parent::__construct();
             $this->method = $method;
             $this->params = $params;
             $this->body = $body;
             $this->uri = $uri;
             $this->query = $query;
+
+            $headers = getallheaders();
+            foreach ($headers as $header => $value) {
+                $this->addHeader(new Header($header, $value));
+            }
         }
 
     }

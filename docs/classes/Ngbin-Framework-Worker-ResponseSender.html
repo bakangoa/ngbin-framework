@@ -80,7 +80,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Response
+    ResponseSender
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Ngbin-Framework-Core-Worker.html"><abbr title="\Ngbin\Framework\Core\Worker">Worker</abbr></a>
@@ -91,12 +91,12 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/Response.php"><a href="files/src-workers-response.html"><abbr title="src/workers/Response.php">Response.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/ResponseSender.php"><a href="files/src-workers-responsesender.html"><abbr title="src/workers/ResponseSender.php">ResponseSender.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">11</span>
 </aside>
 
-            <p class="phpdocumentor-summary">A worker which create a ResponseEntity</p>
+            <p class="phpdocumentor-summary">A worker which create a Response</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -135,6 +135,13 @@
 <dd>Function which start the execution to a chain of workers by starting from this worker</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_send">send()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Send the response</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Ngbin-Framework-Core-Worker.html#method_setNext">setNext()</a>
     <span>
                         &nbsp;: void    </span>
@@ -142,11 +149,18 @@
 <dd>Set the worker after this worker in the pipe</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Ngbin-Framework-Worker-Response.html#method_processing">processing()</a>
+    <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_process">process()</a>
     <span>
                         &nbsp;: <a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a>    </span>
 </dt>
 <dd>Function which contains instruction to execute when the worker run</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_setHeaders">setHeaders()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Set all the response headers</dd>
 
         </dl>
 
@@ -158,7 +172,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Ngbin-Framework-Worker-Response.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -197,7 +211,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Ngbin-Framework-Worker-Response.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -292,6 +306,50 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_send">
+        send()
+        <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_send" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/ResponseSender.php"><a href="files/src-workers-responsesender.html"><abbr title="src/workers/ResponseSender.php">ResponseSender.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Send the response</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">send</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Response.html"><abbr title="\Ngbin\Framework\Entity\Response">Response</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$response</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Response.html"><abbr title="\Ngbin\Framework\Entity\Response">Response</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setNext">
         setNext()
         <a href="classes/Ngbin-Framework-Core-Worker.html#method_setNext" class="headerlink"><i class="fas fa-link"></i></a>
@@ -337,12 +395,12 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_processing">
-        processing()
-        <a href="classes/Ngbin-Framework-Worker-Response.html#method_processing" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_process">
+        process()
+        <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/Response.php"><a href="files/src-workers-response.html"><abbr title="src/workers/Response.php">Response.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/ResponseSender.php"><a href="files/src-workers-responsesender.html"><abbr title="src/workers/ResponseSender.php">ResponseSender.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
@@ -351,14 +409,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">processing</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">process</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
+                <span class="phpdocumentor-signature__argument__name">$response</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -370,6 +428,51 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setHeaders">
+        setHeaders()
+        <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#method_setHeaders" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/workers/ResponseSender.php"><a href="files/src-workers-responsesender.html"><abbr title="src/workers/ResponseSender.php">ResponseSender.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set all the response headers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">setHeaders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Response.html"><abbr title="\Ngbin\Framework\Entity\Response">Response</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$response</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Response.html"><abbr title="\Ngbin\Framework\Entity\Response">Response</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -391,7 +494,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Ngbin-Framework-Worker-Response.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Ngbin-Framework-Worker-ResponseSender.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

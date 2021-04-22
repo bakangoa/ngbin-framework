@@ -15,6 +15,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Ngbin\\Framework\\Core\\Enum\\" : "src/core/enum",
             "Ngbin\\Framework\\Core\\" : "src/core",
             "Ngbin\\Framework\\Entity\\" : "src/entities",
             "Ngbin\\Framework\\Worker\\" : "src/workers",

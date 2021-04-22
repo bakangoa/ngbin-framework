@@ -4,26 +4,51 @@
 
     use Ngbin\Framework\Core\Entity;
     use Ngbin\Framework\Entity\ContentEntity;
+use Ngbin\Framework\Entity\Response;
 
-    /**
+/**
      * A worker which execute a function
      */
     class Launcher extends \Ngbin\Framework\Core\Worker
     {
-        protected function processing(Entity $data) : ContentEntity
+        protected function process(Entity $data) : Response
         {
             if (!empty($data->class))
             {
                 $controller = new $data->class();
-                return new ContentEntity($controller->{$data->method}($data->request));
+                $response = $controller->{$data->method}($data->request);
+
+                return $this->getResponse($response);
             }
 
             if (is_callable($data->method))
             {
-                return new ContentEntity(call_user_func($data->method, $data->request));
+                $response = call_user_func($data->method, $data->request);
+                return $this->getResponse($response);
             }
             
-            return new ContentEntity(null, 404);
+            return $this->getResponse(null);
+        }
+
+        /**
+         * Get a Response object
+         * @param mixed $response
+         * 
+         * @return Response
+         */
+        private function getResponse($response) : Response
+        {
+            if ($response == null)
+            {
+                return new Response(null, null, 404);
+            }
+
+            if (is_object($response) && is_a($response, "Ngbin\Framework\Entity\Response"))
+            {
+                return $response;
+            }
+
+            return new Response(null, null, 500);
         }
     }
 

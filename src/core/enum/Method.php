@@ -1,11 +1,11 @@
 <?php
 
-    namespace Ngbin\Framework\Core;
+    namespace Ngbin\Framework\Core\Enum;
 
     /**
      * A class which contains the different HTTP methods name
      */
-    class HttpMethod
+    class Method
     {
         /**
          * HTTP GET METHOD

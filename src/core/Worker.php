@@ -40,7 +40,7 @@
         * 
         * @return Entity
         */
-        protected abstract function processing(Entity $entity) : Entity;
+        protected abstract function process(Entity $entity) : Entity;
 
         /**
          * Function which start the execution to a chain of workers by starting from this worker
@@ -51,7 +51,7 @@
          */
         public function run(Entity $data, bool $rewrite_data = false)
         {
-            $result = $this->processing($data);
+            $result = $this->process($data);
 
             if (empty($this->next))
             {

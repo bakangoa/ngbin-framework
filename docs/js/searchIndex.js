@@ -116,30 +116,75 @@ Search.appendIndex(
             "summary": "Create\u0020an\u0020empty\u0020Entity",
             "url": "classes/Ngbin-Framework-Core-Entity.html#method_empty"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\HttpMethod",
-            "name": "HttpMethod",
-            "summary": "A\u0020class\u0020which\u0020contains\u0020the\u0020different\u0020HTTP\u0020methods\u0020name",
-            "url": "classes/Ngbin-Framework-Core-HttpMethod.html"
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType",
+            "name": "ContentType",
+            "summary": "A\u0020class\u0020which\u0020contains\u0020the\u0020content\u0020type\u0020different\u0020values",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\HttpMethod\u003A\u003A\u0024get",
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024json",
+            "name": "json",
+            "summary": "JSON\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_json"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024urlencoded",
+            "name": "urlencoded",
+            "summary": "Form\u0020url\u0020encoded\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_urlencoded"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024form_data",
+            "name": "form_data",
+            "summary": "Multipart\u0020form\u0020data\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_form_data"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024text",
+            "name": "text",
+            "summary": "Text\u0020plain\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_text"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024xml",
+            "name": "xml",
+            "summary": "Xml\u0020text\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_xml"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\ContentType\u003A\u003A\u0024html",
+            "name": "html",
+            "summary": "Html\u0020text\u0020content\u0020type",
+            "url": "classes/Ngbin-Framework-Core-Enum-ContentType.html#property_html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\HeaderName",
+            "name": "HeaderName",
+            "summary": "A\u0020class\u0020which\u0020contains\u0020HTTP\u0020headers\u0020name",
+            "url": "classes/Ngbin-Framework-Core-Enum-HeaderName.html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\HeaderName\u003A\u003A\u0024content_type",
+            "name": "content_type",
+            "summary": "Content\u002DType\u0020header\u0020name",
+            "url": "classes/Ngbin-Framework-Core-Enum-HeaderName.html#property_content_type"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\Method",
+            "name": "Method",
+            "summary": "A\u0020class\u0020which\u0020contains\u0020the\u0020different\u0020HTTP\u0020methods\u0020name",
+            "url": "classes/Ngbin-Framework-Core-Enum-Method.html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\Method\u003A\u003A\u0024get",
             "name": "get",
             "summary": "HTTP\u0020GET\u0020METHOD",
-            "url": "classes/Ngbin-Framework-Core-HttpMethod.html#property_get"
+            "url": "classes/Ngbin-Framework-Core-Enum-Method.html#property_get"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\HttpMethod\u003A\u003A\u0024post",
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\Method\u003A\u003A\u0024post",
             "name": "post",
             "summary": "HTTP\u0020POST\u0020METHOD",
-            "url": "classes/Ngbin-Framework-Core-HttpMethod.html#property_post"
+            "url": "classes/Ngbin-Framework-Core-Enum-Method.html#property_post"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\HttpMethod\u003A\u003A\u0024put",
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\Method\u003A\u003A\u0024put",
             "name": "put",
             "summary": "HTTP\u0020PUT\u0020METHOD",
-            "url": "classes/Ngbin-Framework-Core-HttpMethod.html#property_put"
+            "url": "classes/Ngbin-Framework-Core-Enum-Method.html#property_put"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\HttpMethod\u003A\u003A\u0024delete",
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum\\Method\u003A\u003A\u0024delete",
             "name": "delete",
             "summary": "HTTP\u0020DELETE\u0020METHOD",
-            "url": "classes/Ngbin-Framework-Core-HttpMethod.html#property_delete"
+            "url": "classes/Ngbin-Framework-Core-Enum-Method.html#property_delete"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Core\\Worker",
             "name": "Worker",
@@ -156,10 +201,10 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020worker\u0020after\u0020this\u0020worker\u0020in\u0020the\u0020pipe",
             "url": "classes/Ngbin-Framework-Core-Worker.html#method_setNext"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Core\\Worker\u003A\u003Aprocessing\u0028\u0029",
-            "name": "processing",
+            "fqsen": "\\Ngbin\\Framework\\Core\\Worker\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "Function\u0020which\u0020contains\u0020instruction\u0020to\u0020execute\u0020when\u0020the\u0020worker\u0020run",
-            "url": "classes/Ngbin-Framework-Core-Worker.html#method_processing"
+            "url": "classes/Ngbin-Framework-Core-Worker.html#method_process"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Core\\Worker\u003A\u003Arun\u0028\u0029",
             "name": "run",
@@ -171,115 +216,155 @@ Search.appendIndex(
             "summary": "The\u0020next\u0020worker",
             "url": "classes/Ngbin-Framework-Core-Worker.html#property_next"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity",
-            "name": "ContentEntity",
-            "summary": "An\u0020entity\u0020which\u0020represent\u0020the\u0020content\u0020of\u0020the\u0020response",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header",
+            "name": "Header",
+            "summary": "A\u0020class\u0020which\u0020represents\u0020an\u0020HTTP\u0020request\u0020or\u0020response\u0020header",
+            "url": "classes/Ngbin-Framework-Entity-Header.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html#method___construct"
+            "url": "classes/Ngbin-Framework-Entity-Header.html#method___construct"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity\u003A\u003AgetData\u0028\u0029",
-            "name": "getData",
-            "summary": "Function\u0020to\u0020get\u0020the\u0020content\u0020data",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html#method_getData"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Function\u0020which\u0020return\u0020the\u0020value\u0020of\u0020the\u0020header\u0027s\u0020name",
+            "url": "classes/Ngbin-Framework-Entity-Header.html#method_getName"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity\u003A\u003AgetCode\u0028\u0029",
-            "name": "getCode",
-            "summary": "Function\u0020to\u0020get\u0020the\u0020content\u0020HTTP\u0020code.",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html#method_getCode"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header\u003A\u003AgetValue\u0028\u0029",
+            "name": "getValue",
+            "summary": "Function\u0020which\u0020return\u0020the\u0020value\u0020of\u0020the\u0020header",
+            "url": "classes/Ngbin-Framework-Entity-Header.html#method_getValue"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity\u003A\u003A\u0024data",
-            "name": "data",
-            "summary": "The\u0020data\u0020contains\u0020in\u0020the\u0020content",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html#property_data"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "The\u0020name\u0020of\u0020the\u0020header",
+            "url": "classes/Ngbin-Framework-Entity-Header.html#property_name"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ContentEntity\u003A\u003A\u0024code",
-            "name": "code",
-            "summary": "The\u0020HTTP\u0020attached\u0020to\u0020the\u0020content",
-            "url": "classes/Ngbin-Framework-Entity-ContentEntity.html#property_code"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Header\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "The\u0020value\u0020of\u0020the\u0020header",
+            "url": "classes/Ngbin-Framework-Entity-Header.html#property_value"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity",
-            "name": "RequestEntity",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\HttpEntity",
+            "name": "HttpEntity",
+            "summary": "An\u0020entity\u0020which\u0020describes\u0020a\u0020Http\u0020entity",
+            "url": "classes/Ngbin-Framework-Entity-HttpEntity.html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\HttpEntity\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Ngbin-Framework-Entity-HttpEntity.html#method___construct"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\HttpEntity\u003A\u003AgetHeaders\u0028\u0029",
+            "name": "getHeaders",
+            "summary": "Get\u0020all\u0020the\u0020headers",
+            "url": "classes/Ngbin-Framework-Entity-HttpEntity.html#method_getHeaders"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\HttpEntity\u003A\u003AaddHeader\u0028\u0029",
+            "name": "addHeader",
+            "summary": "Add\u0020a\u0020new\u0020header",
+            "url": "classes/Ngbin-Framework-Entity-HttpEntity.html#method_addHeader"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\HttpEntity\u003A\u003A\u0024headers",
+            "name": "headers",
+            "summary": "The\u0020list\u0020of\u0020headers",
+            "url": "classes/Ngbin-Framework-Entity-HttpEntity.html#property_headers"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request",
+            "name": "Request",
             "summary": "An\u0020entity\u0020which\u0020represents\u0020the\u0020request\u0020handled",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html"
+            "url": "classes/Ngbin-Framework-Entity-Request.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#method___construct"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#method___construct"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A\u0024method",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A\u0024method",
             "name": "method",
             "summary": "Contains\u0020the\u0020request\u0020method",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#property_method"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#property_method"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A\u0024params",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A\u0024params",
             "name": "params",
             "summary": "Contains\u0020the\u0020data\u0020which\u0020was\u0020in\u0020the\u0020request\u0020uri",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#property_params"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#property_params"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A\u0024body",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A\u0024body",
             "name": "body",
             "summary": "Contains\u0020the\u0020POST\u0020and\u0020PUT\u0020request\u0020data",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#property_body"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#property_body"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A\u0024query",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A\u0024query",
             "name": "query",
             "summary": "Contains\u0020the\u0020GET\u0020request\u0020data",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#property_query"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#property_query"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RequestEntity\u003A\u003A\u0024uri",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Request\u003A\u003A\u0024uri",
             "name": "uri",
             "summary": "Contains\u0020the\u0020uri\u0020of\u0020the\u0020request",
-            "url": "classes/Ngbin-Framework-Entity-RequestEntity.html#property_uri"
+            "url": "classes/Ngbin-Framework-Entity-Request.html#property_uri"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ResponseEntity",
-            "name": "ResponseEntity",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response",
+            "name": "Response",
             "summary": "An\u0020entity\u0020which\u0020represents\u0020the\u0020HTTP\u0020response",
-            "url": "classes/Ngbin-Framework-Entity-ResponseEntity.html"
+            "url": "classes/Ngbin-Framework-Entity-Response.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ResponseEntity\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Ngbin-Framework-Entity-ResponseEntity.html#method___construct"
+            "url": "classes/Ngbin-Framework-Entity-Response.html#method___construct"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ResponseEntity\u003A\u003Aend\u0028\u0029",
-            "name": "end",
-            "summary": "Send\u0020the\u0020response",
-            "url": "classes/Ngbin-Framework-Entity-ResponseEntity.html#method_end"
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003AgetCode\u0028\u0029",
+            "name": "getCode",
+            "summary": "Function\u0020to\u0020get\u0020the\u0020content\u0020HTTP\u0020code.",
+            "url": "classes/Ngbin-Framework-Entity-Response.html#method_getCode"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\ResponseEntity\u003A\u003A\u0024content",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "Return\u0020the\u0020response\u0020content",
+            "url": "classes/Ngbin-Framework-Entity-Response.html#method_getContent"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003AsetHeader\u0028\u0029",
+            "name": "setHeader",
+            "summary": "Add\u0020an\u0020header\u0020to\u0020the\u0020response",
+            "url": "classes/Ngbin-Framework-Entity-Response.html#method_setHeader"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003A\u0024content",
             "name": "content",
             "summary": "Contains\u0020the\u0020response\u0020data",
-            "url": "classes/Ngbin-Framework-Entity-ResponseEntity.html#property_content"
+            "url": "classes/Ngbin-Framework-Entity-Response.html#property_content"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RouteEntity",
-            "name": "RouteEntity",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Response\u003A\u003A\u0024code",
+            "name": "code",
+            "summary": "The\u0020HTTP\u0020attached\u0020to\u0020the\u0020content",
+            "url": "classes/Ngbin-Framework-Entity-Response.html#property_code"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Route",
+            "name": "Route",
             "summary": "An\u0020entity\u0020which\u0020represent\u0020a\u0020function\u0020route",
-            "url": "classes/Ngbin-Framework-Entity-RouteEntity.html"
+            "url": "classes/Ngbin-Framework-Entity-Route.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RouteEntity\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Route\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Ngbin-Framework-Entity-RouteEntity.html#method___construct"
+            "url": "classes/Ngbin-Framework-Entity-Route.html#method___construct"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RouteEntity\u003A\u003A\u0024class",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Route\u003A\u003A\u0024class",
             "name": "class",
             "summary": "The\u0020class\u0020of\u0020the\u0020function",
-            "url": "classes/Ngbin-Framework-Entity-RouteEntity.html#property_class"
+            "url": "classes/Ngbin-Framework-Entity-Route.html#property_class"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RouteEntity\u003A\u003A\u0024method",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Route\u003A\u003A\u0024method",
             "name": "method",
             "summary": "The\u0020function\u0020pointed",
-            "url": "classes/Ngbin-Framework-Entity-RouteEntity.html#property_method"
+            "url": "classes/Ngbin-Framework-Entity-Route.html#property_method"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Entity\\RouteEntity\u003A\u003A\u0024request",
+            "fqsen": "\\Ngbin\\Framework\\Entity\\Route\u003A\u003A\u0024request",
             "name": "request",
             "summary": "The\u0020request\u0020to\u0020transmit\u0020as\u0020function\u0020argument",
-            "url": "classes/Ngbin-Framework-Entity-RouteEntity.html#property_request"
+            "url": "classes/Ngbin-Framework-Entity-Route.html#property_request"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Formatter\\Formatter",
             "name": "Formatter",
@@ -290,6 +375,16 @@ Search.appendIndex(
             "name": "format",
             "summary": "Format\u0020a\u0020data",
             "url": "classes/Ngbin-Framework-Formatter-Formatter.html#method_format"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Formatter\\ToJSON",
+            "name": "ToJSON",
+            "summary": "This\u0020class\u0020which\u0020can\u0020be\u0020used\u0020to\u0020convert\u0020a\u0020array\u0020or\u0020object\u0020into\u0020JSON",
+            "url": "classes/Ngbin-Framework-Formatter-ToJSON.html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Formatter\\ToJSON\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "Format\u0020a\u0020data",
+            "url": "classes/Ngbin-Framework-Formatter-ToJSON.html#method_format"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Pipeline",
             "name": "Pipeline",
@@ -316,10 +411,15 @@ Search.appendIndex(
             "summary": "A\u0020worker\u0020which\u0020execute\u0020a\u0020function",
             "url": "classes/Ngbin-Framework-Worker-Launcher.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Worker\\Launcher\u003A\u003Aprocessing\u0028\u0029",
-            "name": "processing",
+            "fqsen": "\\Ngbin\\Framework\\Worker\\Launcher\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "Function\u0020which\u0020contains\u0020instruction\u0020to\u0020execute\u0020when\u0020the\u0020worker\u0020run",
-            "url": "classes/Ngbin-Framework-Worker-Launcher.html#method_processing"
+            "url": "classes/Ngbin-Framework-Worker-Launcher.html#method_process"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Worker\\Launcher\u003A\u003AgetResponse\u0028\u0029",
+            "name": "getResponse",
+            "summary": "Get\u0020a\u0020Response\u0020object",
+            "url": "classes/Ngbin-Framework-Worker-Launcher.html#method_getResponse"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Worker\\RequestHandler",
             "name": "RequestHandler",
@@ -328,13 +428,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Ngbin\\Framework\\Worker\\RequestHandler\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Function\u0020which\u0020create\u0020an\u0020RequestEntity\u0020from\u0020an\u0020HTTP\u0020request",
+            "summary": "Function\u0020which\u0020create\u0020an\u0020Request\u0020from\u0020an\u0020HTTP\u0020request",
             "url": "classes/Ngbin-Framework-Worker-RequestHandler.html#method_handle"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Worker\\RequestHandler\u003A\u003Aprocessing\u0028\u0029",
-            "name": "processing",
+            "fqsen": "\\Ngbin\\Framework\\Worker\\RequestHandler\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "Function\u0020which\u0020contains\u0020instruction\u0020to\u0020execute\u0020when\u0020the\u0020worker\u0020run",
-            "url": "classes/Ngbin-Framework-Worker-RequestHandler.html#method_processing"
+            "url": "classes/Ngbin-Framework-Worker-RequestHandler.html#method_process"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Worker\\RequestHandler\u003A\u003A_URI",
             "name": "_URI",
@@ -346,15 +446,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Ngbin-Framework-Worker-RequestHandler.html#constant__METHOD"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Worker\\Response",
-            "name": "Response",
-            "summary": "A\u0020worker\u0020which\u0020create\u0020a\u0020ResponseEntity",
-            "url": "classes/Ngbin-Framework-Worker-Response.html"
+            "fqsen": "\\Ngbin\\Framework\\Worker\\ResponseSender",
+            "name": "ResponseSender",
+            "summary": "A\u0020worker\u0020which\u0020create\u0020a\u0020Response",
+            "url": "classes/Ngbin-Framework-Worker-ResponseSender.html"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Worker\\Response\u003A\u003Aprocessing\u0028\u0029",
-            "name": "processing",
+            "fqsen": "\\Ngbin\\Framework\\Worker\\ResponseSender\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "Function\u0020which\u0020contains\u0020instruction\u0020to\u0020execute\u0020when\u0020the\u0020worker\u0020run",
-            "url": "classes/Ngbin-Framework-Worker-Response.html#method_processing"
+            "url": "classes/Ngbin-Framework-Worker-ResponseSender.html#method_process"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Worker\\ResponseSender\u003A\u003Asend\u0028\u0029",
+            "name": "send",
+            "summary": "Send\u0020the\u0020response",
+            "url": "classes/Ngbin-Framework-Worker-ResponseSender.html#method_send"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Worker\\ResponseSender\u003A\u003AsetHeaders\u0028\u0029",
+            "name": "setHeaders",
+            "summary": "Set\u0020all\u0020the\u0020response\u0020headers",
+            "url": "classes/Ngbin-Framework-Worker-ResponseSender.html#method_setHeaders"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Worker\\Router",
             "name": "Router",
@@ -376,10 +486,10 @@ Search.appendIndex(
             "summary": "Compare\u0020a\u0020path\u0020and\u0020an\u0020uri",
             "url": "classes/Ngbin-Framework-Worker-Router.html#method_getRouteParams"
         },                {
-            "fqsen": "\\Ngbin\\Framework\\Worker\\Router\u003A\u003Aprocessing\u0028\u0029",
-            "name": "processing",
+            "fqsen": "\\Ngbin\\Framework\\Worker\\Router\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
             "summary": "Function\u0020which\u0020contains\u0020instruction\u0020to\u0020execute\u0020when\u0020the\u0020worker\u0020run",
-            "url": "classes/Ngbin-Framework-Worker-Router.html#method_processing"
+            "url": "classes/Ngbin-Framework-Worker-Router.html#method_process"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Worker\\Router\u003A\u003A\u0024routes",
             "name": "routes",
@@ -405,6 +515,11 @@ Search.appendIndex(
             "name": "Core",
             "summary": "",
             "url": "namespaces/ngbin-framework-core.html"
+        },                {
+            "fqsen": "\\Ngbin\\Framework\\Core\\Enum",
+            "name": "Enum",
+            "summary": "",
+            "url": "namespaces/ngbin-framework-core-enum.html"
         },                {
             "fqsen": "\\Ngbin\\Framework\\Entity",
             "name": "Entity",
