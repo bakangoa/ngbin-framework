@@ -80,7 +80,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    RequestEntity
+    Route
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Ngbin-Framework-Core-Entity.html"><abbr title="\Ngbin\Framework\Core\Entity">Entity</abbr></a>
@@ -91,12 +91,12 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/Route.php"><a href="files/src-entities-route.html"><abbr title="src/entities/Route.php">Route.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">10</span>
 </aside>
 
-            <p class="phpdocumentor-summary">An entity which represents the request handled</p>
+            <p class="phpdocumentor-summary">An entity which represent a function route</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -114,42 +114,28 @@
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_body">$body</a>
-    <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Contains the POST and PUT request data</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_method">$method</a>
+    <a href="classes/Ngbin-Framework-Entity-Route.html#property_class">$class</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>Contains the request method</dd>
+<dd>The class of the function</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_params">$params</a>
+    <a href="classes/Ngbin-Framework-Entity-Route.html#property_method">$method</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: mixed            </span>
 </dt>
-<dd>Contains the data which was in the request uri</dd>
+<dd>The function pointed</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_query">$query</a>
+    <a href="classes/Ngbin-Framework-Entity-Route.html#property_request">$request</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: <a href="classes/Ngbin-Framework-Entity-Request.html"><abbr title="\Ngbin\Framework\Entity\Request">Request</abbr></a>            </span>
 </dt>
-<dd>Contains the GET request data</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_uri">$uri</a>
-    <span>
-                &nbsp;: string            </span>
-</dt>
-<dd>Contains the uri of the request</dd>
+<dd>The request to transmit as function argument</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#method___construct">__construct()</a>
+    <a href="classes/Ngbin-Framework-Entity-Route.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
@@ -172,7 +158,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ngbin-Framework-Entity-Route.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -181,24 +167,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_body">
-        $body
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_body" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_class">
+        $class
+        <a href="classes/Ngbin-Framework-Entity-Route.html#property_class" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/Route.php"><a href="files/src-entities-route.html"><abbr title="src/entities/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Contains the POST and PUT request data</p>
+        <p class="phpdocumentor-summary">The class of the function</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$body</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$class</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -215,21 +201,21 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_method">
         $method
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_method" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ngbin-Framework-Entity-Route.html#property_method" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/Route.php"><a href="files/src-entities-route.html"><abbr title="src/entities/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Contains the request method</p>
+        <p class="phpdocumentor-summary">The function pointed</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$method</span>
     </code>
 
@@ -245,88 +231,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_params">
-        $params
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_params" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_request">
+        $request
+        <a href="classes/Ngbin-Framework-Entity-Route.html#property_request" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/Route.php"><a href="files/src-entities-route.html"><abbr title="src/entities/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Contains the data which was in the request uri</p>
+        <p class="phpdocumentor-summary">The request to transmit as function argument</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$params</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_query">
-        $query
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_query" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Contains the GET request data</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$query</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_uri">
-        $uri
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#property_uri" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Contains the uri of the request</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$uri</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Ngbin-Framework-Entity-Request.html"><abbr title="\Ngbin\Framework\Entity\Request">Request</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$request</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -339,7 +261,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ngbin-Framework-Entity-Route.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -349,25 +271,25 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Ngbin-Framework-Entity-Route.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/RequestEntity.php"><a href="files/src-entities-requestentity.html"><abbr title="src/entities/RequestEntity.php">RequestEntity.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/entities/Route.php"><a href="files/src-entities-route.html"><abbr title="src/entities/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Request.html"><abbr title="\Ngbin\Framework\Entity\Request">Request</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uri</span>
+                <span class="phpdocumentor-signature__argument__name">$class</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -376,32 +298,16 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$params</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$body</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$query</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Ngbin-Framework-Entity-Request.html"><abbr title="\Ngbin\Framework\Entity\Request">Request</abbr></a></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -467,7 +373,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Ngbin-Framework-Entity-RequestEntity.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Ngbin-Framework-Entity-Route.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

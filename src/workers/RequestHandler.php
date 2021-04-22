@@ -3,7 +3,7 @@
     namespace Ngbin\Framework\Worker;
 
     use Ngbin\Framework\Core\Entity;
-    use Ngbin\Framework\Core\HttpMethod;
+    use Ngbin\Framework\Core\Enum\Method;
     use Ngbin\Framework\Entity\Request;
 
     /**
@@ -26,19 +26,19 @@
             $request = new Request($data[self::_URI], $data[self::_METHOD]);
 
             switch ($data[self::_METHOD]) {
-                case HttpMethod::$get:
+                case Method::$get:
                     $request->query = $_GET;
                     break;
 
-                case HttpMethod::$post:
+                case Method::$post:
                     $request->body = $_POST;
                     break;
 
-                case HttpMethod::$put:
+                case Method::$put:
                     parse_str(file_get_contents("php://input"), $request->body);
                     break;
 
-                case HttpMethod::$delete:
+                case Method::$delete:
                     parse_str(file_get_contents("php://input"), $request->body);
                     break;
                 

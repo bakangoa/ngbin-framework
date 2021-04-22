@@ -3,7 +3,7 @@
     namespace Ngbin\Framework;
 
     use Ngbin\Framework\Core\Entity;
-    use Ngbin\Framework\Core\HttpMethod;
+    use Ngbin\Framework\Core\Enum\Method;
     use Ngbin\Framework\Core\Worker;
     use Ngbin\Framework\Worker\Launcher;
     use Ngbin\Framework\Worker\RequestHandler;
@@ -39,10 +39,10 @@
 
         public function __construct() {
             $this->routes = [];
-            $this->routes[HttpMethod::$get] = [];
-            $this->routes[HttpMethod::$post] = [];
-            $this->routes[HttpMethod::$put] = [];
-            $this->routes[HttpMethod::$delete] = [];
+            $this->routes[Method::$get] = [];
+            $this->routes[Method::$post] = [];
+            $this->routes[Method::$put] = [];
+            $this->routes[Method::$delete] = [];
 
             $this->pipeline = new Pipeline();
 
@@ -136,7 +136,7 @@
          */
         public function addGetRoute(String $path, String $class, $function)
         {
-            $this->addRoute(HttpMethod::$get, $path, $class, $function);
+            $this->addRoute(Method::$get, $path, $class, $function);
         }
 
         /**
@@ -149,7 +149,7 @@
          */
         public function addPostRoute(String $path, String $class, $function)
         {
-            $this->addRoute(HttpMethod::$post, $path, $class, $function);
+            $this->addRoute(Method::$post, $path, $class, $function);
         }
 
         /**
@@ -162,7 +162,7 @@
          */
         public function addPutRoute(String $path, String $class, $function)
         {
-            $this->addRoute(HttpMethod::$put, $path, $class, $function);
+            $this->addRoute(Method::$put, $path, $class, $function);
         }
 
         /**
@@ -175,7 +175,7 @@
          */
         public function addDeleteRoute(String $path, String $class, $function)
         {
-            $this->addRoute(HttpMethod::$delete, $path, $class, $function);
+            $this->addRoute(Method::$delete, $path, $class, $function);
         }
 
         /**
@@ -263,7 +263,6 @@
 
             try {
                 $response = $this->pipeline->start(Entity::empty(), true);
-                $response->end();
             } catch (\Throwable $th) {
                 throw $th;
             }

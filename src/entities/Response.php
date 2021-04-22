@@ -2,12 +2,12 @@
 
     namespace Ngbin\Framework\Entity;
 
-    use Ngbin\Framework\Core\Entity;
+    use Ngbin\Framework\Formatter\Formatter;
 
     /**
      * An entity which represents the HTTP response
      */
-    class Response extends Entity
+    class Response extends HttpEntity
     {
         /**
          * Contains the response data
@@ -16,24 +16,56 @@
         private $content;
 
         /**
-         * @param ContentEntity $content
+         * The HTTP attached to the content
+         * @var int
          */
-        public function __construct(ContentEntity $content)
+        private $code;
+
+        /**
+         * @param mixed $content
+         * @param int $code 
+         */
+        public function __construct($content, Formatter $formatter = null, int $code = 200)
         {
-            if ($content->getCode() != -1)
+            parent::__construct();
+            $this->content = $content;
+            $this->code = $code;
+            if (!empty($formatter))
             {
-                http_response_code($content->getCode());
+                $this->content = $formatter->format($this->content);
             }
-            $this->content = $content->getData();
+            http_response_code($this->code);
         }
 
         /**
-         * Send the response
+         * Function to get the content HTTP code.
+         * Return -1 if this code can be ignored
+         * @return int
+         */
+        public function getCode() : int
+        {
+            return $this->code;
+        }
+
+        /**
+         * Return the response content
+         * @return mixed
+         */
+        public function getContent()
+        {
+            return $this->content;
+        }
+
+        /**
+         * Add an header to the response
+         * @param String $name The name of the header
+         * @param mixed $value The value of the header
+         * 
          * @return void
          */
-        public function end()
+        public function setHeader(String $name, $value)
         {
-            echo $this->content;
+            $this->addHeader(new Header($name, $value));
         }
     }
 

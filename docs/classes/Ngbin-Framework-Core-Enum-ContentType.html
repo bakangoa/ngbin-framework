@@ -76,11 +76,12 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/ngbin.html">Ngbin</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/ngbin-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/ngbin-framework-core.html">Core</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/ngbin-framework-core-enum.html">Enum</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    HttpMethod
+    ContentType
 
     
     
@@ -88,12 +89,12 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/HttpMethod.php"><a href="files/src-core-httpmethod.html"><abbr title="src/core/HttpMethod.php">HttpMethod.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">8</span>
 </aside>
 
-            <p class="phpdocumentor-summary">A class which contains the different HTTP methods name</p>
+            <p class="phpdocumentor-summary">A class which contains the content type different values</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -111,32 +112,46 @@
 
 <dl class="phpdocumentor-table-of-contents">
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_delete">$delete</a>
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_form_data">$form_data</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>HTTP DELETE METHOD</dd>
+<dd>Multipart form data content type</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_get">$get</a>
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_html">$html</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>HTTP GET METHOD</dd>
+<dd>Html text content type</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_post">$post</a>
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_json">$json</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>HTTP POST METHOD</dd>
+<dd>JSON content type</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_put">$put</a>
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_text">$text</a>
     <span>
                 &nbsp;: string            </span>
 </dt>
-<dd>HTTP PUT METHOD</dd>
+<dd>Text plain content type</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_urlencoded">$urlencoded</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Form url encoded content type</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_xml">$xml</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Xml text content type</dd>
 
             </dl>
 
@@ -148,7 +163,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Ngbin-Framework-Core-HttpMethod.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -157,121 +172,185 @@
             -public
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property_delete">
-        $delete
-        <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_delete" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_form_data">
+        $form_data
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_form_data" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/HttpMethod.php"><a href="files/src-core-httpmethod.html"><abbr title="src/core/HttpMethod.php">HttpMethod.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-</aside>
-
-        <p class="phpdocumentor-summary">HTTP DELETE METHOD</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$delete</span>
-     = <span class="phpdocumentor-signature__default-value">&quot;DELETE&quot;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_get">
-        $get
-        <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_get" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/HttpMethod.php"><a href="files/src-core-httpmethod.html"><abbr title="src/core/HttpMethod.php">HttpMethod.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">14</span>
-</aside>
-
-        <p class="phpdocumentor-summary">HTTP GET METHOD</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$get</span>
-     = <span class="phpdocumentor-signature__default-value">&quot;GET&quot;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_post">
-        $post
-        <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_post" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/HttpMethod.php"><a href="files/src-core-httpmethod.html"><abbr title="src/core/HttpMethod.php">HttpMethod.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">19</span>
-</aside>
-
-        <p class="phpdocumentor-summary">HTTP POST METHOD</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$post</span>
-     = <span class="phpdocumentor-signature__default-value">&quot;POST&quot;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_put">
-        $put
-        <a href="classes/Ngbin-Framework-Core-HttpMethod.html#property_put" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/core/HttpMethod.php"><a href="files/src-core-httpmethod.html"><abbr title="src/core/HttpMethod.php">HttpMethod.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
 </aside>
 
-        <p class="phpdocumentor-summary">HTTP PUT METHOD</p>
+        <p class="phpdocumentor-summary">Multipart form data content type</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$put</span>
-     = <span class="phpdocumentor-signature__default-value">&quot;PUT&quot;</span></code>
+    <span class="phpdocumentor-signature__name">$form_data</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;multipart/form-data&quot;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_html">
+        $html
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_html" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Html text content type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$html</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;text/html&quot;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_json">
+        $json
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_json" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+</aside>
+
+        <p class="phpdocumentor-summary">JSON content type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$json</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;application/json&quot;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_text">
+        $text
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_text" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Text plain content type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$text</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;text/plain&quot;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_urlencoded">
+        $urlencoded
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_urlencoded" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Form url encoded content type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$urlencoded</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;application/x-www-form-urlencoded&quot;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_xml">
+        $xml
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#property_xml" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/core/enum/ContentType.php"><a href="files/src-core-enum-contenttype.html"><abbr title="src/core/enum/ContentType.php">ContentType.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Xml text content type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$xml</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;text/xml&quot;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -295,7 +374,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Ngbin-Framework-Core-HttpMethod.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Ngbin-Framework-Core-Enum-ContentType.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
