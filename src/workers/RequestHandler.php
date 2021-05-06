@@ -3,7 +3,9 @@
     namespace Ngbin\Framework\Worker;
 
     use Ngbin\Framework\Core\Entity;
-    use Ngbin\Framework\Core\Enum\Method;
+use Ngbin\Framework\Core\Enum\ContentType;
+use Ngbin\Framework\Core\Enum\HeaderName;
+use Ngbin\Framework\Core\Enum\Method;
     use Ngbin\Framework\Entity\Request;
 
     /**
@@ -31,6 +33,22 @@
                     break;
 
                 case Method::$post:
+                    $headers = getallheaders();
+                    if (!empty($headers[HeaderName::$content_type]))
+                    {
+                        $type = ContentType::$json;
+                        try {
+                            if (\str_starts_with($headers[HeaderName::$content_type], $type))
+                            {
+                                $request->body = (Array)json_decode(file_get_contents('php://input'));
+                                break;
+                            }
+                        } catch (\Exception $e) {
+                            $request->body = $_POST;
+                            break;
+                        }
+                        
+                    }
                     $request->body = $_POST;
                     break;
 
