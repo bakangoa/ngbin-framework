@@ -10,4 +10,17 @@ Just run the command "composer require bakangoa/ngbin-framework".
 Create in your code an instance of "Ngbin\Framework\App". 
 Add to this instance some worker, routes and call method run to start your app.
 
+# Example
+
+A service which return "Hello world" when his route "GET /" is called
+```php
+$app = new App();
+
+$app->get("/", function (Request $req) {
+    return new Response("Hello world");
+});
+
+$app->run();
+```
+
 Official documentation at https://bakangoa.github.io/ngbin-framework/
