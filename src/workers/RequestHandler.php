@@ -50,6 +50,7 @@ use Ngbin\Framework\Core\Enum\Method;
                         
                     }
                     $request->body = $_POST;
+                    $request->files = $_FILES;
                     break;
 
                 case Method::$put:

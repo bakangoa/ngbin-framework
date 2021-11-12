@@ -33,6 +33,11 @@
          * @var String
          */
         public $uri;
+        /**
+         * Contains the FILES request data
+         * @var Array
+         */
+        public $files;
 
         /**
          * @param String $uri
@@ -40,8 +45,9 @@
          * @param Array $params
          * @param Array $body
          * @param Array $query
+         * @param Array $files
          */
-        public function __construct(String $uri, String $method, Array $params = [], Array $body = [], Array $query = [])
+        public function __construct(String $uri, String $method, Array $params = [], Array $body = [], Array $query = [], Array $files = [])
         {
             parent::__construct();
             $this->method = $method;
@@ -49,6 +55,7 @@
             $this->body = $body;
             $this->uri = $uri;
             $this->query = $query;
+            $this->files = $files;
 
             $headers = getallheaders();
             foreach ($headers as $header => $value) {
