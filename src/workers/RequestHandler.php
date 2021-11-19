@@ -40,7 +40,7 @@ use Ngbin\Framework\Core\Enum\Method;
                         try {
                             if (\str_starts_with($headers[HeaderName::$content_type], $type))
                             {
-                                $request->body = (Array)json_decode(file_get_contents('php://input'));
+                                $request->body = json_decode(file_get_contents('php://input'), true);
                                 break;
                             }
                         } catch (\Exception $e) {
