@@ -20,7 +20,7 @@
         public $params;
         /**
          * Contains the POST and PUT request data
-         * @var Array
+         * @var Array|object
          */
         public $body;
         /**
@@ -43,11 +43,11 @@
          * @param String $uri
          * @param String $method
          * @param Array $params
-         * @param Array $body
+         * @param Array|object $body
          * @param Array $query
          * @param Array $files
          */
-        public function __construct(String $uri, String $method, Array $params = [], Array $body = [], Array $query = [], Array $files = [])
+        public function __construct(String $uri, String $method, Array $params = [], Array|object $body = [], Array $query = [], Array $files = [])
         {
             parent::__construct();
             $this->method = $method;
